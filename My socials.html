@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gradient Background Animation</title>
+    <style>
+      /* CSS */
+
+      .animation-background {
+        background: linear-gradient(to right, #00ccff, #ff7f00, #2fff00);
+        background-size: 400% 400%;
+        animation: animate-background 10s infinite ease-in-out;
+      }
+
+      @keyframes animate-background {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body class="animation-background">
+    <!-- HTML -->
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Social Media Redirect</title>
+    <style>
+      body {
+        background-color: #f9f9f9;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      h1 {
+        color: #333;
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      p {
+        color: #777;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .social-buttons {
+        margin-top: 30px;
+      }
+
+      .social-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #3498db;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .social-button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+    <script>
+      // JavaScript
+
+      function redirectToSocialMedia(platform) {
+        switch (platform) {
+          case "facebook":
+            window.location.href = "https://web.facebook.com/Mahmud51/";
+            break;
+          case "twitter":
+            window.location.href = "https://twitter.com/mahmud_b_k";
+            break;
+          case "instagram":
+            window.location.href = "https://www.instagram.com/mahmud.b.k/";
+            break;
+          case "tiktok":
+            window.location.href = "https://www.tiktok.com/@_m.b.k__";
+            break;
+          default:
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to My Social Media</h1>
+      <p>Click on the buttons below to visit my social media profiles:</p>
+
+      <div class="social-buttons">
+        <a
+          class="social-button"
+          onclick="redirectToSocialMedia('facebook')"
+          href="#"
+          >Facebook</a
+        >
+        <a
+          class="social-button"
+          onclick="redirectToSocialMedia('twitter')"
+          href="#"
+          >Twitter</a
+        >
+        <a
+          class="social-button"
+          onclick="redirectToSocialMedia('instagram')"
+          href="#"
+          >Instagram</a
+        >
+        <a
+          class="social-button"
+          onclick="redirectToSocialMedia('tiktok')"
+          href="#"
+          >TikTok</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
